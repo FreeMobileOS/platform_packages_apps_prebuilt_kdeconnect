@@ -1,0 +1,26 @@
+<!-- KDE Connect can be trusted and is not very useful without
+     the permissions granted here...
+     The ultra-paranoid can still revoke the permissions.
+-->
+<exceptions>
+	<exception package="org.kde.kdeconnect_tp">
+		<permission name="android.permission.RECEIVE_BOOT_COMPLETED" fixed="false" />
+		<permission name="android.permission.INTERNET" fixed="false" />
+		<permission name="android.permission.ACCESS_NETWORK_STATE" fixed="false" />
+		<permission name="android.permission.CHANGE_WIFI_MULTICAST_STATE" fixed="false" />
+		<permission name="android.permission.BATTERY_STATS" fixed="false" />
+		<permission name="android.permission.READ_PHONE_STATE" fixed="false" />
+		<permission name="android.permission.RECEIVE_SMS" fixed="false" />
+		<permission name="android.permission.SEND_SMS" fixed="false" />
+		<permission name="android.permission.READ_CONTACTS" fixed="false" />
+		<permission name="android.permission.READ_EXTERNAL_STORAGE" fixed="false" />
+		<permission name="android.permission.WRITE_EXTERNAL_STORAGE" fixed="false" />
+		<permission name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" fixed="false" />
+	</exception>
+	<exception package="org.kde.kdeconnect.Plugins.RemoteKeyboardPlugin.RemoteKeyboardService">
+		<permission name="android.permission.BIND_INPUT_METHOD" fixed="false" />
+	</exception>
+	<exception package="org.kde.kdeconnect.Plugins.NotificationsPlugin.NotificationReceiver">
+		<permission name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE" fixed="false" />
+	</exception>
+</exceptions>
